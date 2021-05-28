@@ -30,7 +30,19 @@ public class MainDao {
 
 //        userDao2.create(user2);
 //        userDao2.delete(2);
-        System.out.println(userDao2.read(2));
+//        System.out.println(userDao2.read(2));
+        UserDao userDao =new UserDao();
+        User[] all = userDao.findAll();
+        for (User u: all) {
+            System.out.println(u);
+        }
+//        User userToUpdate2 = userDao2.read(2);
+//        userToUpdate2.setUserName("Wiesław");
+//        userToUpdate2.setEmail("wiesław.ejdys90@gmail.com");
+//        userToUpdate2.setPassword("klawisze");
+//        System.out.println(userDao2.update(userToUpdate2));
+//        System.out.println(userDao2.delete(2));
+
 
 
 
